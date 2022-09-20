@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		102B3F6028D16ED100765A7C /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 102B3F5F28D16ED100765A7C /* main.c */; };
+		10FDAA9028D952E80048B559 /* linkedStruct.c in Sources */ = {isa = PBXBuildFile; fileRef = 10FDAA8F28D952E80048B559 /* linkedStruct.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		102B3F5C28D16ED100765A7C /* C_Basic */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = C_Basic; sourceTree = BUILT_PRODUCTS_DIR; };
 		102B3F5F28D16ED100765A7C /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		10FDAA8E28D952D20048B559 /* linkedStruct.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = linkedStruct.h; sourceTree = "<group>"; };
+		10FDAA8F28D952E80048B559 /* linkedStruct.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = linkedStruct.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +60,27 @@
 		102B3F5E28D16ED100765A7C /* C_Basic */ = {
 			isa = PBXGroup;
 			children = (
+				10FDAA9228D9530F0048B559 /* source */,
+				10FDAA9128D952FE0048B559 /* header */,
 				102B3F5F28D16ED100765A7C /* main.c */,
 			);
 			path = C_Basic;
+			sourceTree = "<group>";
+		};
+		10FDAA9128D952FE0048B559 /* header */ = {
+			isa = PBXGroup;
+			children = (
+				10FDAA8E28D952D20048B559 /* linkedStruct.h */,
+			);
+			path = header;
+			sourceTree = "<group>";
+		};
+		10FDAA9228D9530F0048B559 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				10FDAA8F28D952E80048B559 /* linkedStruct.c */,
+			);
+			path = source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				102B3F6028D16ED100765A7C /* main.c in Sources */,
+				10FDAA9028D952E80048B559 /* linkedStruct.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,12 +1,16 @@
-#include <stdio.h>
-#include <sys/time.h>
+#include "linkedStruct.h"
 
 int main(int argc, char *argv[]) {
-    time_t now;
-    struct tm *p;
-    time(&now);
-    printf("现在的时间: %s\n", asctime(gmtime(&now)));
-    p = localtime(&now);
-    printf("%d,%d,%d,%d:%d:%d\n", 1900 + p->tm_year, 1 + p->tm_mon, p->tm_mday ,p->tm_hour, p->tm_min, p->tm_sec);
+    ListPtr l = Create();
+    int AddCode = Add(l, NULL, "MINt", "", "", 0, "");
+    if(AddCode != 0) {
+        printf("添加错误\n");
+        return -1;
+    }
+    int editCode = Edit(l, "MINt", "", "", 0, "", "Jack", "", "", 1, "");
+    if(editCode != 0) {
+        printf("修改错误\n");
+        return -1;
+    }
     return 0;
 }
